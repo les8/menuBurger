@@ -1,28 +1,30 @@
+html,
 body {
+    top: 0;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 .menu {
     position: absolute;
     width: 320px;
-    height: 100vw;
+    height: 100vh;
     background-color: burlywood;
     padding-top: 50px;
-    left: -320px;
-    display: none;
     z-index: 1;
-    transform: translateX(320px);
-    transition-property: transform;
-    transition-duration: 3s;
+    left: -320px;
+    transform: translateX(-320px);
+    transition-property: all;
+    transition-duration: 0.7s;
 }
-.menu.active {
-    display: block;
+.active {
     transform: translateX(320px);
-    transition-property: transform;
-    transition-duration: 3s;
+    transition-property: all;
+    transition-duration: 0.7s;
 }
 .wrapper {
     position: relative;
+    top: 0;
     width: 100%;
     background-color: aquamarine;
 }
@@ -48,5 +50,11 @@ body {
     margin: 0 auto;
     width: 1500px;
     background-color: cadetblue;
-    padding: 20px;
+    padding: 60px 0;
+}
+.container h1 {
+    padding: 0;
+    margin: 0;
+}
+.rotate {
 }
